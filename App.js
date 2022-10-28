@@ -23,7 +23,7 @@ function App () {
         <ImageBackground style ={styles.image_2}source = {require("./assets/rahul.background.png")}>
                 <Image style={styles.image_1}source = {require("./assets/rahul.image2.png")}></Image>
                 <Text style={styles.title}>Let's Sign You In</Text>
-                <Text style={styles.title2}>welcome back, we tests missed you!</Text>
+                <Text style={styles.title2}>welcome back, we missed you!</Text>
                 {/* { (error || errorMessage) && <Text style={styles.error}>{error || errorMessage}</Text> } */}
                 <ImageBackground style={styles.rectangle}>
                     <TextInput 
