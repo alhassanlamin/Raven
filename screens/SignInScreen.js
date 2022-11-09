@@ -27,11 +27,11 @@ export default function SignInScreen() {
   return (
     <ImageBackground
       style={styles.image_2}
-      source={require("../assets/rahul.background.png")}
+      source={require("../assets/rahul-background.png")}
     >
       <Image
         style={styles.image_1}
-        source={require("../assets/rahul.image2.png")}
+        source={require("../assets/rahul-image2.png")}
       ></Image>
       <Text style={styles.title}>Let's Sign You In</Text>
       <Text style={styles.title2}>welcome back, we missed you!</Text>
