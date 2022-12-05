@@ -1,7 +1,15 @@
 import React, { useState } from "react";
-import {View, Text, StyleSheet, TextInput, Button, Image, ImageBackground} from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TextInput,
+  Button,
+  Image,
+  ImageBackground,
+} from "react-native";
 
-export default function SignInScreen({navigation}) {
+export default function SignInScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   // const [ errorMessage, setErrorMessage ] = useState(null)
@@ -54,8 +62,7 @@ export default function SignInScreen({navigation}) {
                 title="Sign In"
                 color="white"
                 //onPress={handleLogin}
-                 onPress={() => navigation.navigate('Map')}
-
+                onPress={() => navigation.navigate("Map")}
               />
             </ImageBackground>
           </View>
@@ -145,6 +152,5 @@ const styles = StyleSheet.create({
     borderRadius: "15%",
     marginTop: 80,
     marginBottom: 50,
-
   },
 });
