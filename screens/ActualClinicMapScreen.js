@@ -2,6 +2,8 @@ import React from "react";
 import { StyleSheet, View, Pressable } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 import Icon from "react-native-ico-material-design";
+ReactNative.LogBox.ignoreAllLogs(true);
+
 export default function ActualClinicMapScreen({ navigation }) {
   const UTHealth = {
     latitude: 30.27742,
@@ -126,7 +128,6 @@ export default function ActualClinicMapScreen({ navigation }) {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   mapsheet: {
     height: "80%",

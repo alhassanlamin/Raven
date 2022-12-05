@@ -8,6 +8,7 @@ import {
   Image,
   ImageBackground,
 } from "react-native";
+disableYellowBox = true;
 
 export default function SignInScreen({ navigation }) {
   const [email, setEmail] = useState("");
@@ -98,6 +99,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#212121",
     borderRadius: "15%",
     marginTop: 65,
+    color: "white"
   },
   passwordInput: {
     width: "100%",
@@ -109,6 +111,7 @@ const styles = StyleSheet.create({
     borderRadius: "15%",
     marginTop: 30,
     marginBottom: 50,
+    color: "white"
   },
   error: {
     textAlign: "center",

@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import {View, Text, StyleSheet, TextInput, Button, ImageBackground, Pressable} from "react-native";
 import Icon from 'react-native-ico-material-design';
 import CheckBox from "expo-checkbox";
+disableYellowBox = true;
+
 export default function ReportFeature({navigation}) {
     const [isSelected, setSelection] = useState(false);
     var iconHeight = 26;
     var iconWidth = 26;
-    changeText = (text) => {
+    const changeText = (text) => {
         console.log(text + "has been pressed!")
         this.setState({
             screenText: text
@@ -19,7 +21,9 @@ export default function ReportFeature({navigation}) {
                 style={styles.textBox}
                 color="white"
                 placeholder= "Type in your illness..."
-                placeholderTextColor="white"
+                placeholderTextColor="#545454"
+                multiline={true}
+                blurOnSubmit={true}
                 />
             <View style={styles.checkBoxContainer}>
                 <CheckBox
@@ -36,7 +40,7 @@ export default function ReportFeature({navigation}) {
                     <Button
                         title="Report"
                         color="white"
-                        //onPress={handleLogin}
+                        onPress={()=> navigation.navigate('Map')}
                     />
                 </ImageBackground>
             </View>
@@ -63,7 +67,7 @@ export default function ReportFeature({navigation}) {
 const styles = StyleSheet.create({
     reportTitle: {
         fontSize: 30,
-        fontWeight: "700",
+        //fontWeight: "700",
         marginBottom: 50,
         textAlign: "center",
         color: "white",  
@@ -96,12 +100,12 @@ const styles = StyleSheet.create({
         fontSize: 20,
         width: "75%",
         height: "30%",
-        borderwidth: 1,
+        borderWidth: 1,
         borderRadius: 10,
+        borderColor: "#3E236E",
         padding: 10,
         textAlignVertical: "top",
-        paddingTop: 20,
-        paddingBottom: 220
+        paddingTop: 10,
     },
     checkBoxContainer:{
         flexDirection: "row",

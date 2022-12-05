@@ -10,6 +10,8 @@ export default function NewScreen({navigation}) {
             screenText: text
         })
     }
+disableYellowBox = true;
+
     return (
         <View style = {styles.container}>
             <SafeAreaView style={styles.safeAreaViewContainer}>
@@ -169,7 +171,7 @@ const styles = StyleSheet.create({
         width: "60%",
         marginLeft: 10,
         paddingHorizontal: 10,
-        justifyContent: "center"
+        justifyContent: "center",
     },
     newsView: {
         flexDirection: "row", 

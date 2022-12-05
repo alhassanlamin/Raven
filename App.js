@@ -9,13 +9,14 @@ import InsuranceInput from "./screens/InsuranceInput";
 import ReportFeature from "./screens/ReportFeature";
 import NewScreen from "./screens/NewsScreen";
 import ButterScoc from "./screens/ButterScocch";
-
+import { LogBox } from "react-native";
+LogBox.ignoreAllLogs();
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <PaperProvider>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{animation: 'none'}}>
           <Stack.Screen
             name="Sign"
             component={SignInScreen}

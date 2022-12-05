@@ -173,6 +173,7 @@ export default function InsuranceInput({navigation}) {
         </View>
     )
 }
+disableYellowBox = true;
 
 const styles = StyleSheet.create({
     safeAreaViewContainer: {
